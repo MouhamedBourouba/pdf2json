@@ -27,8 +27,9 @@ app.post("/pdf2json", upload.single("pdf"), (req, res) => {
         if(error) {
             res.sendStatus(400) 
             throw error
-        }
-        
+        } else {
+		
+	}        
     })
 
     res.sendStatus(200) 
